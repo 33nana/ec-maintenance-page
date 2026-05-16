@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bảo trì hệ thống</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f1eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
+
+    .maintenance-wrapper {
+      width: 100%;
+      max-width: 1280px;
+      background: #ffffff;
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      min-height: 680px;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.08),
+        0 8px 20px rgba(0,0,0,0.04);
+      position: relative;
+    }
+
+    /* LEFT */
+    .maintenance-content {
+      width: 48%;
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      background: #fff;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff4ea;
+      color: #ff8a00;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 28px;
+      width: fit-content;
+    }
+
+    .title {
+      font-size: 52px;
+      line-height: 1.15;
+      color: #121212;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #6f6f6f;
+      max-width: 520px;
+      margin-bottom: 40px;
+    }
+
+    /* RIGHT */
+    .maintenance-image {
+      width: 52%;
+      position: relative;
+      background:
+        radial-gradient(circle at top right, #f5efe6 0%, #f5efe6 25%, transparent 26%),
+        radial-gradient(circle at bottom right, #f7f4ee 0%, #f7f4ee 35%, transparent 36%),
+        #f9f7f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .maintenance-image svg {
+      height: 100px;
+    }
+
+    .footer-note {
+      position: absolute;
+      bottom: 30px;
+      left: 60px;
+      font-size: 14px;
+      color: #9c9c9c;
+    }
+
+    /* Tablet */
+    @media (max-width: 992px) {
+      .maintenance-wrapper {
+        flex-direction: column-reverse;
+        min-height: auto;
+      }
+
+      .maintenance-content,
+      .maintenance-image {
+        width: 100%;
+      }
+
+      .maintenance-image {
+        min-height: 420px;
+        padding: 40px 30px 0;
+      }
+
+      .maintenance-content {
+        padding: 50px 32px 60px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .title {
+        font-size: 42px;
+      }
+
+      .description {
+        max-width: 100%;
+      }
+
+      .footer-note {
+        position: static;
+        margin-top: 40px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 576px) {
+      body {
+        padding: 16px;
+      }
+
+      .maintenance-wrapper {
+        border-radius: 22px;
+      }
+
+      .maintenance-content {
+        padding: 36px 24px 44px;
+      }
+
+      .maintenance-image {
+        min-height: 320px;
+        padding: 24px 20px 0;
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+
+      .maintenance-image img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="maintenance-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="maintenance-content">
+
+      <div class="badge">
+        ⚡ Hệ thống đang bảo trì
+      </div>
+
+      <h1 class="title">
+        Website đang được nâng cấp và bảo trì
+      </h1>
+
+      <p class="description">
+        Chúng tôi đang thực hiện cập nhật hệ thống để mang lại trải nghiệm mua sắm tốt hơn,
+        tốc độ nhanh hơn và giao diện hiện đại hơn cho khách hàng.
+      </p>
+
+      <div class="footer-note">
+        © Power by Babanana
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="maintenance-image">
+      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 54"><path d="m8.96 9.38 14.42-8.3a.3.3 0 0 1 .3 0l14.42 8.3c.2.11.2.4 0 .52l-14.36 8.35a.3.3 0 0 1-.3 0L8.96 9.9a.3.3 0 0 1 0-.52ZM1.15 13.87l2.2-1.27a.3.3 0 0 1 .3 0l22.23 12.84c.1.06.15.16.15.26V51.4c0 .1-.06.2-.15.26l-2.2 1.26a.3.3 0 0 1-.3 0l-2.2-1.26a.3.3 0 0 1-.16-.26v-22.8a.3.3 0 0 0-.15-.27l-4.4-2.53a.3.3 0 0 0-.45.26v19.58c0 .1-.06.2-.15.26l-2.2 1.27a.3.3 0 0 1-.3 0l-2.2-1.27a.3.3 0 0 1-.16-.26v-22.8a.3.3 0 0 0-.15-.27l-4.4-2.53a.3.3 0 0 0-.45.26v19.52c0 .1-.06.2-.15.26l-2.2 1.27a.3.3 0 0 1-.3 0l-2.21-1.27a.3.3 0 0 1-.15-.26V14.13c0-.11.06-.21.15-.26ZM45.9 13.93l-2.2-1.33a.3.3 0 0 0-.3 0L31.19 19.7a.3.3 0 0 0-.15.26v25.68c0 .1.05.2.15.26l2.2 1.27c.1.05.2.05.3 0l2.2-1.27a.3.3 0 0 0 .15-.26v-22.8c0-.11.06-.21.15-.27l4.4-2.53a.3.3 0 0 1 .46.26v19.52c0 .1.06.2.15.26l2.2 1.27c.1.05.2.05.3 0l2.2-1.23a.3.3 0 0 0 .15-.26V14.19a.3.3 0 0 0-.14-.26Z" fill="#7B1B1B" stroke="#7B1B1B"/></svg>
+      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209 53"><path d="M11.16 5.89h3.06v3.86h-.76c-.5 0-.87-.05-1.11-.16-.24-.1-.43-.23-.56-.36a1.8 1.8 0 0 1-.34-.53 4.85 4.85 0 0 1-.3-1.86v-.95Zm-4.42 0h3.67v9.3H6.74V5.9Zm-3.83 0h3.06v.95c0 1.17-.21 1.97-.64 2.4-.34.34-.9.51-1.66.51h-.76V5.9Zm13.15 0h3.68v9.3h-3.68V5.9Zm10.54 0h3.8v2.58h-.72c-1.23 0-2.07-.19-2.52-.58-.37-.32-.56-.83-.56-1.54v-.46Zm-4.86 0h3.68v3.75h2.74v1.78h-2.74v3.76h-3.68V5.89Zm4.85 8.64c0-.94.55-1.58 1.65-1.92.41-.13.95-.2 1.62-.2h.54v2.78h-3.8v-.66ZM23.74 5.3c-.45 0-.8-.12-1.05-.36l-.3-.3 3.6-3.12 3.6 3.11-.3.31a1.2 1.2 0 0 1-.88.36c-.68 0-1.35-.34-2-1.01l-.42-.42-.2.22c-.38.42-.76.73-1.12.92-.37.2-.68.29-.93.29Zm18.9.58h.6c1.68 0 2.69.57 3.01 1.71.11.37.16.8.16 1.28v6.32h-3.78V5.9Zm-5.08 0h3.8v9.31h-3.8V5.9Zm-5.09 0h3.8v9.31h-3.8V5.9Zm28.3.01h3.42v3.1h-1.37c-.69 0-1.22-.17-1.6-.52a1.4 1.4 0 0 1-.45-1.07V5.9Zm-1.73 9.3c-.73 0-1.39-.27-1.96-.82-.51-.48-.9-1.12-1.2-1.92a6.48 6.48 0 0 1-.39-2.2c0-1.09.27-2.06.8-2.9.39-.6.9-1.03 1.52-1.28.32-.12.67-.18 1.06-.18h.53v9.3h-.36Zm1.37-4.34h3.78v1.66c0 .98-.26 1.67-.76 2.07-.51.4-1.36.61-2.53.61h-.49v-4.34Zm10.47-4.96h.53c1.7 0 2.8.75 3.35 2.26.22.62.33 1.34.33 2.14 0 1.36-.26 2.48-.79 3.36a3.14 3.14 0 0 1-2.89 1.54h-.53V5.9Zm-1.65 9.3c-1.68 0-2.8-.85-3.34-2.55a7.63 7.63 0 0 1-.34-2.35c0-1.77.5-3.02 1.48-3.75a3.57 3.57 0 0 1 2.2-.65h.53v9.3h-.53ZM68.1 5.3c-.46 0-.81-.11-1.06-.35l-.3-.3 3.6-3.12 3.6 3.11-.3.31a1.2 1.2 0 0 1-.88.36c-.68 0-1.34-.34-2-1.01l-.42-.42-.2.22c-.38.42-.76.73-1.12.92-.37.2-.67.29-.92.29Zm18.79.6h.61c1.68 0 2.68.56 3.01 1.7.1.37.16.8.16 1.28v6.32h-3.78V5.9Zm-5.07 0h3.8v9.3h-3.8V5.9Zm-5.09 0h3.8v9.3h-3.8V5.9ZM25 16.19h2v2h-2zM72.15 2.46 73.87 0l1.23.86-1.15 1.64a1 1 0 0 1-1.4.24l-.4-.28ZM23.82 24.9h1.27c3.47 0 5.55 1.19 6.23 3.55.22.76.33 1.64.33 2.65v13.1h-7.83V24.9Zm-10.51 0h7.87v19.3h-7.87V24.9Zm-10.54 0h7.88v19.3H2.77V24.9Zm33.55.02h7.62V44.2h-7.62V24.92Zm21.95 0h1.27c3.48 0 5.55 1.18 6.22 3.53.23.77.34 1.66.34 2.66v13.08h-7.83V24.92Zm-10.28 0h7.62V44.2h-7.62V24.92Zm21.78 0h7.61v9.64h2.77v-9.64h7.61v19.25h-7.61V36.7h-2.77v7.47h-7.61V24.92ZM112.27 24.92h1.28c3.47 0 5.55 1.18 6.22 3.53.22.77.34 1.66.34 2.66v13.08h-7.84V24.92Zm-10.28 0h7.62V44.2H102V24.92Zm21.78 0h7.62v9.64h2.76v-9.64h7.62v19.25h-7.62V36.7h-2.76v7.47h-7.62V24.92Zm31.88-.01h7.87v19.28h-7.87V24.91Zm-10.17 0h7.83v19.28h-1.27c-3.48 0-5.55-1.18-6.22-3.54a9.33 9.33 0 0 1-.34-2.64V24.9Zm31.96.01h1.27c3.48 0 5.55 1.18 6.22 3.53.23.77.34 1.66.34 2.66v13.08h-7.83V24.92Zm-10.28 0h7.62V44.2h-7.62V24.92Zm32.7 0h7.09v6.43h-2.83c-1.43 0-2.53-.36-3.3-1.09a2.9 2.9 0 0 1-.95-2.2v-3.14ZM196.3 44.2a5.75 5.75 0 0 1-4.08-1.7c-1.04-1-1.87-2.33-2.46-3.99a13.4 13.4 0 0 1-.82-4.54 11 11 0 0 1 1.67-6.02 6.1 6.1 0 0 1 5.34-3.02h1.09V44.2h-.74Zm2.83-9h7.82v3.45c0 2.02-.52 3.45-1.57 4.28-1.06.85-2.8 1.27-5.24 1.27h-1v-9Z" fill="#7B1B1B"/></svg>
+    </div>
+
+  </section>
+
+</body>
+</html>
